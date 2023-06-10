@@ -42,7 +42,7 @@ public class ATMSystem {
 
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // Consume the newline character
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
