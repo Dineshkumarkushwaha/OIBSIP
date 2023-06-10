@@ -5,13 +5,13 @@ public class ATMSystem {
     private static Scanner scanner = new Scanner(System.in);
     private static Random random = new Random();
 
-    private static String userId = "12345";
-    private static String userPin = "0000";
+    private static String userId = "Dinesh1234";
+    private static String userPin = "1234";
 
     public static void main(String[] args) {
         System.out.println("Welcome to the ATM System!");
 
-        // Prompt for user id and pin
+        
         System.out.print("User ID: ");
         String inputId = scanner.nextLine();
 
@@ -77,7 +77,7 @@ public class ATMSystem {
     private static void withdrawMoney() {
         System.out.print("Enter the amount to withdraw: ");
         int amount = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
+        scanner.nextLine(); 
 
         System.out.print("Enter your PIN: ");
         String pin = scanner.nextLine();
@@ -95,8 +95,8 @@ public class ATMSystem {
 
         System.out.print("Enter the amount to deposit: ");
         int amount = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
-
+        scanner.nextLine(); 
+        
         System.out.println("Successfully deposited: ₹" + amount);
     }
 
@@ -109,7 +109,7 @@ public class ATMSystem {
 
         System.out.print("Enter the amount to transfer: ");
         int amount = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
+        scanner.nextLine(); 
 
         System.out.println(
                 "Transfer successful to " + bankName + " account number: " + accountNumber + " amount: ₹" + amount);
